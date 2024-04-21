@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>514</width>
+    <height>468</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>20</y>
+      <width>311</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>맑은 고딕</family>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(52, 104, 156);
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>회원 관리 프로그램</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>471</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>맑은 고딕</family>
+     </font>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>로그인</string>
+     </attribute>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>90</y>
+        <width>56</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>아이디 :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="loginid_edit">
+      <property name="geometry">
+       <rect>
+        <x>161</x>
+        <y>85</y>
+        <width>181</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+       </font>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>98</x>
+        <y>120</y>
+        <width>56</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>비밀번호 :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="loginpw_edit">
+      <property name="geometry">
+       <rect>
+        <x>162</x>
+        <y>115</y>
+        <width>181</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+       </font>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="login_btn">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>170</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>로그인</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="loginreset_btn">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>170</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>초기화</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>회원가입</string>
+     </attribute>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>51</x>
+        <y>50</y>
+        <width>56</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>아이디 :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="joinid_edit">
+      <property name="geometry">
+       <rect>
+        <x>101</x>
+        <y>45</y>
+        <width>261</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>39</x>
+        <y>80</y>
+        <width>56</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>비밀번호 :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="joinpw_edit">
+      <property name="geometry">
+       <rect>
+        <x>101</x>
+        <y>75</y>
+        <width>261</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="joinname_edit">
+      <property name="geometry">
+       <rect>
+        <x>102</x>
+        <y>106</y>
+        <width>261</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>42</x>
+        <y>111</y>
+        <width>56</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>     이름 :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="joinemail_edit">
+      <property name="geometry">
+       <rect>
+        <x>101</x>
+        <y>138</y>
+        <width>261</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>44</x>
+        <y>143</y>
+        <width>56</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string> 이메일 :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="joinage_edit">
+      <property name="geometry">
+       <rect>
+        <x>101</x>
+        <y>170</y>
+        <width>261</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>47</x>
+        <y>175</y>
+        <width>56</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>   나이 :</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="join_btn">
+      <property name="geometry">
+       <rect>
+        <x>131</x>
+        <y>220</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>회원가입</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="joinreset_btn">
+      <property name="geometry">
+       <rect>
+        <x>231</x>
+        <y>220</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>초기화</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="idcheck_btn">
+      <property name="geometry">
+       <rect>
+        <x>369</x>
+        <y>44</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ID CHECK</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>회원조회</string>
+     </attribute>
+     <widget class="QPushButton" name="memberreset_btn">
+      <property name="geometry">
+       <rect>
+        <x>232</x>
+        <y>220</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>초기화</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="memberage_edit">
+      <property name="geometry">
+       <rect>
+        <x>102</x>
+        <y>170</y>
+        <width>261</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="memberpw_edit">
+      <property name="geometry">
+       <rect>
+        <x>102</x>
+        <y>75</y>
+        <width>261</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="membersearch_btn">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>44</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>회원조회</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>45</x>
+        <y>143</y>
+        <width>56</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string> 이메일 :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="memberid_edit">
+      <property name="geometry">
+       <rect>
+        <x>102</x>
+        <y>45</y>
+        <width>261</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>52</x>
+        <y>50</y>
+        <width>56</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>아이디 :</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="membermodify_btn">
+      <property name="geometry">
+       <rect>
+        <x>132</x>
+        <y>220</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>정보수정</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="membername_edit">
+      <property name="geometry">
+       <rect>
+        <x>103</x>
+        <y>106</y>
+        <width>261</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>43</x>
+        <y>111</y>
+        <width>56</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>     이름 :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>48</x>
+        <y>175</y>
+        <width>56</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>   나이 :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="memberemail_edit">
+      <property name="geometry">
+       <rect>
+        <x>102</x>
+        <y>138</y>
+        <width>261</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>80</y>
+        <width>56</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>비밀번호 :</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab4">
+     <attribute name="title">
+      <string>회원탈퇴</string>
+     </attribute>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>112</x>
+        <y>90</y>
+        <width>56</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>아이디 :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="deletepw_edit">
+      <property name="geometry">
+       <rect>
+        <x>164</x>
+        <y>115</y>
+        <width>181</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+       </font>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="deleteid_edit">
+      <property name="geometry">
+       <rect>
+        <x>163</x>
+        <y>85</y>
+        <width>181</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+       </font>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="deletereset_btn">
+      <property name="geometry">
+       <rect>
+        <x>162</x>
+        <y>170</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>초기화</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="delete_btn">
+      <property name="geometry">
+       <rect>
+        <x>252</x>
+        <y>170</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>탈퇴</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>120</y>
+        <width>56</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>비밀번호 :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>50</y>
+        <width>271</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>탈퇴를 원하는 아이디와 비밀번호를 입력하세요</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>514</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>loginid_edit</tabstop>
+  <tabstop>loginpw_edit</tabstop>
+  <tabstop>login_btn</tabstop>
+  <tabstop>loginreset_btn</tabstop>
+  <tabstop>joinid_edit</tabstop>
+  <tabstop>joinpw_edit</tabstop>
+  <tabstop>idcheck_btn</tabstop>
+  <tabstop>joinname_edit</tabstop>
+  <tabstop>joinemail_edit</tabstop>
+  <tabstop>joinage_edit</tabstop>
+  <tabstop>join_btn</tabstop>
+  <tabstop>joinreset_btn</tabstop>
+  <tabstop>memberid_edit</tabstop>
+  <tabstop>memberpw_edit</tabstop>
+  <tabstop>membersearch_btn</tabstop>
+  <tabstop>membername_edit</tabstop>
+  <tabstop>memberemail_edit</tabstop>
+  <tabstop>memberage_edit</tabstop>
+  <tabstop>membermodify_btn</tabstop>
+  <tabstop>memberreset_btn</tabstop>
+  <tabstop>deleteid_edit</tabstop>
+  <tabstop>deletepw_edit</tabstop>
+  <tabstop>deletereset_btn</tabstop>
+  <tabstop>delete_btn</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
